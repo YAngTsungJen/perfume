@@ -20,16 +20,8 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: normal;
 }
-.font-size {
-  &-sm {
-    font-size: $font-size-sm;
-  }
-}
 .material-icons {
   vertical-align: bottom;
-}
-.line-height-1 {
-  line-height: 1;
 }
 .bg-cover {
   background-size: cover;
@@ -70,4 +62,13 @@ body {
 }
 .lh-6{
   line-height: 60px;
+}
+.w-30{
+  width: 30%;
+}
+.font-weight-bold{
+  font-weight: $font-weight-bold;
+}
+.font-weight-normal{
+  font-weight: $font-weight-normal;
 }

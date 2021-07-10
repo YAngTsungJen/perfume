@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>perfume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">
-  <link rel="stylesheet" href="./css/all.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfume</title>
+    <link rel="icon" href="https://www.vogue.com.tw/images/brands/vogue/favicons/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light p-0 py-md-2 sticky-top">
-    <div class="container">
-      <h1 class="navbar-logo">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top py-0 py-md-2">
+    <div class="container-fluid container-md px-0 px-md-2">
+      <h1 class="navbar-logo p-3 p-md-0">
         <a href="index.html">D'Perfume 香水電商網站</a>
       </h1>
+      <a class="nav-link ms-auto fz-3 lh-3 text-secondary d-block d-md-none" href="./product.html">
+        <span class="material-icons pb-1">
+          shopping_cart
+        </span><span class="badge rounded-pill bg-warning text-dark">3</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./products.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./products.html">
+              <span class="material-icons pb-1">
                 store
                 </span>Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./login.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./login.html">
+              <span class="material-icons pb-1">
                 person
                 </span>log in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./member.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./member.html">
+              <span class="material-icons pb-1">
                 favorite
                 </span>Wishlist</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./product.html">
-              <span class="material-icons">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
                 shopping_cart
                 </span>Cart(3)</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
+                phone
+                </span>Contact</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
+                rss_feed
+                </span>BLOG</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header class="bg-primary">
+  <header class="bg-primary d-none d-md-block">
     <div class="container">
       <ul class="nav d-flex mb-11">
         <li class="nav-item h5">
@@ -82,25 +100,25 @@
       </div>
     </div>
   </div>
-  <div class="container mb-md-10 ">
+  <div class="container mt-6 mb-10 ">
     <div class="row">
-      <div class="col-md-8">
-        <img class="img-fulid" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product1.jpg" alt="CHANEL N°5">
+      <div class="col-lg-8 d-flex">
+        <img class="img-fulid mb-5 mb-lg-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product1.jpg" alt="CHANEL N°5">
       </div>
-      <div class="col-md-4">
-        <h2 class="fz-5 lh-5">CHANEL N°5</h2>
-        <p class="fz-3 lh-3 mb-md-7">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
-        <p class="fz-3 lh-3 mb-md-3">NT$4,980</p>
+      <div class="col-lg-4">
+        <h2 class="fz-5 lh-5 font-weight-bold">CHANEL N°5</h2>
+        <p class="fz-3 lh-3 mb-7">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+        <p class="fz-3 lh-3 mb-3">NT$4,980</p>
         <div class="d-flex">
-          <select class="form-select form-select-lg w-50 mb-md-2" aria-label=".form-select-lg example">
+          <select class="form-select form-select-lg w-50 mb-2" aria-label=".form-select-lg example">
             <option selected>1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
-          <div class="btn btn-md btn-primary w-50">加入購物車</div>
+          <div class="btn btn-lg btn-primary w-50 h-100">加入購物車</div>
         </div>
-        <p class="fz-2 lh-2 mb-md-11">
+        <p class="fz-2 lh-2 mb-9 mb-lg-11">
           <a href="#" data-bs-toggle="modal" data-bs-target="#favorite">
             <span class="material-icons text-primary">
               favorite
@@ -108,25 +126,27 @@
           </a>
         </p>
         <ul class="list-unstyled">
-          <li class="mb-md-4">
-            <h3 class="fz-2 lh-2 mb-md-2">商品購買須知</h3>
+          <li class="mb-4">
+            <h3 class="fz-2 lh-2 mb-2">商品購買須知</h3>
             <p class="fz-2 lh-2">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
           </li>
-          <li>
-            <h3 class="fz-2 lh-2 mb-md-2">退換貨須知</h3>
+          <li class="mb-9 mb-lg-0">
+            <h3 class="fz-2 lh-2 mb-2">退換貨須知</h3>
             <p class="fz-2 lh-2">依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
           </li>
         </ul>
       </div>
-      <div class="col-md-8">
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
         <div class="row">
-          <div class="col-md-6 my-md-6">
+          <div class="col-lg-6 my-lg-6">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product2.jpg" alt="CHANEL N°5">
           </div>
-          <div class="col-md-6 my-md-6">
+          <div class="col-lg-6 my-4 my-lg-6">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product3.jpg" alt="CHANEL N°5">
           </div>
-          <div class="col-md-12">
+          <div class="col-lg-12">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product1.jpg" alt="CHANEL N°5">
           </div>
         </div>
@@ -136,13 +156,13 @@
   <!-- footer -->
   <div class="bg-primary p-3">
     <div class="container d-flex justify-content-between">
-      <div class="d-md-flex">
+      <div class="d-flex">
         <a href="#">
           <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo">
         </a>
-        <p class="text-white ms-md-4 py-2">© 2020. All Rights Reserved.</p>
+        <p class="text-white ms-md-4 ps-3 ps-lg-5 py-2">© 2020. All Rights Reserved.</p>
       </div>
-      <ul class="nav d-flex">
+      <ul class="nav d-lg-flex d-none d-lg-block">
         <li class="nav-item">
           <a href="#" class="nav-link text-white">Product</a>
         </li>

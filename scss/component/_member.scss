@@ -1,0 +1,10 @@
+.person_line{
+  border-bottom: 1px solid #818A91;
+}
+.member_line{
+  color: #818A91;
+  &:hover{
+    border-bottom: 2px solid #916000;
+    color: #916000;
+  }
+}

@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>perfume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">
-  <link rel="stylesheet" href="./css/all.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfume</title>
+    <link rel="icon" href="https://www.vogue.com.tw/images/brands/vogue/favicons/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light p-0 py-md-2 sticky-top">
-    <div class="container">
-      <h1 class="navbar-logo">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top py-0 py-md-2">
+    <div class="container-fluid container-md px-0 px-md-2">
+      <h1 class="navbar-logo p-3 p-md-0">
         <a href="index.html">D'Perfume 香水電商網站</a>
       </h1>
+      <a class="nav-link ms-auto fz-3 lh-3 text-secondary d-block d-md-none" href="./product.html">
+        <span class="material-icons pb-1">
+          shopping_cart
+        </span><span class="badge rounded-pill bg-warning text-dark">3</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./products.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./products.html">
+              <span class="material-icons pb-1">
                 store
                 </span>Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./login.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./login.html">
+              <span class="material-icons pb-1">
                 person
                 </span>log in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./member.html">
-              <span class="material-icons">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="./member.html">
+              <span class="material-icons pb-1">
                 favorite
                 </span>Wishlist</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link pe-3 pe-md-7 fz-3 lh-3" href="./product.html">
-              <span class="material-icons">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
                 shopping_cart
                 </span>Cart(3)</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
+                phone
+                </span>Contact</a>
+          </li>
+          <li class="nav-item d-block d-md-none">
+            <a class="nav-link ps-3 ps-md-7 fz-3 lh-3" href="#">
+              <span class="material-icons pb-1">
+                rss_feed
+                </span>BLOG</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header class="bg-primary mb-11">
+  <header class="bg-primary d-none d-md-block">
     <div class="container">
-      <ul class="nav d-flex mb-5">
+      <ul class="nav d-flex mb-11">
         <li class="nav-item h5">
           <a href="#" class="nav-link text-white py-3 ps-0">CHANEL</a>
         </li>
@@ -74,28 +92,29 @@
   </header>
   <div class="container mb-11">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 mt-9 mt-md-0 mb-5 mb-lg-0">
         <div class="bg-cover" style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true');
         padding-top: 100%;"></div>
       </div>
       <div class="col-md-4 d-flex flex-column justify-content-center">
+        <h2 class="fz-5 lh-5 mb-2">Log in</h2>
         <form class="needs-validation" novalidate>
-          <div class="form-group">
-            <label for="user-account">帳號</label>
+          <div class="form-group mb-4">
+            <label for="user-account" class="mb-1">帳號</label>
             <input type="text" class="form-control" id="user-account"
               aria-describedby="user-account" placeholder="email@example.com" required>
             <div class="invalid-feedback">請輸入帳號</div>
           </div>
           <div class="form-group">
-            <label for="user-password">密碼</label>
+            <label for="user-password" class="mb-1">密碼</label>
             <input type="password" class="form-control" id="user-password" placeholder="Password" required>
             <div class="invalid-feedback">請輸入密碼</div>
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <a href="#" class="text-primary mt-4">忘記密碼</a>
-            <div class="mt-4">
-              <button type="button" class="btn btn-outline-primary mr-2">註冊</button>
-              <button type="submit" class="btn btn-primary">登入</button>
+            <div class="mt-8">
+              <button type="button" class="btn btn-outline-primary px-4 px-md-2 px-lg-4 me-2">註冊</button>
+              <button type="submit" class="btn btn-primary px-4 px-md-2 px-lg-4 px-md-2">登入</button>
             </div>
           </div>
         </form>
@@ -105,13 +124,13 @@
   <!-- footer -->
   <div class="bg-primary p-3">
     <div class="container d-flex justify-content-between">
-      <div class="d-md-flex">
+      <div class="d-flex">
         <a href="#">
           <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo">
         </a>
-        <p class="text-white ms-md-4 py-2">© 2020. All Rights Reserved.</p>
+        <p class="text-white ms-md-4 ps-3 ps-lg-5 py-2">© 2020. All Rights Reserved.</p>
       </div>
-      <ul class="nav d-flex">
+      <ul class="nav d-lg-flex d-none d-lg-block">
         <li class="nav-item">
           <a href="#" class="nav-link text-white">Product</a>
         </li>
